@@ -1,7 +1,22 @@
 <html>
+
 <head>
 	<title>Sanna er en abe</title>
+	<script>
+		function udskrivHestePris(antalHeste) {
+			let prisPerHest = 100
+			let valuta = "DKK"
+			console.log("Prisen for " + antalHeste + " heste er:")
+			console.log(antalHeste * prisPerHest + " " + valuta)
+		}
+	</script>
 </head>
+
 <body>
-	Det her en en webside
+	<p>Det her en en webside</p>
+	<button onclick="udskrivHestePris(9)">9 heste</button>
+	<button onclick="udskrivHestePris(234)">234 heste</button>
+	<button onclick="udskrivHestePris(-3)">-3 heste</button>
 </body>
+
+</html>
